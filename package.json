@@ -1,0 +1,11 @@
+{
+  "name": "js-starter-beginner",
+  "version": "1.0.0",
+  "description": "A project to start learning js fundementals",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
