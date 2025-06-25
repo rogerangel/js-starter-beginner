@@ -20,5 +20,7 @@ function log(message) {
 // ===== Exercise code below =====
 
 // Exercise 1: Hello World
+console.log('Hello, World!');
+
 // TODO: Uncomment the line below and run the code
 // log('Hello, World!');
