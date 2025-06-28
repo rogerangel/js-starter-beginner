@@ -27,7 +27,7 @@ console.log('Hello, World!');
 
 // Exercise 2: Variables and Data Types
 let name = "Estanler";
-const age = 35;
+let age = 35;
 var isStudent = true;
 let greeting = "Hello";
 let score = 99;
@@ -59,3 +59,28 @@ console.log("Is x not equal to y?", x != y);
 console.log("Is x greater than y?", x > y);
 console.log("Is x less than or equal to y?", x <= y);
 
+age = 35;
+let isStudent= true;
+let isAdult = age >= 18;
+
+console.log("Is the person an adult?", isAdult === true);
+
+// Exercise 4: Control Flow
+let score = 87;
+if (score >= 90) {
+  console.log("Grade: A");
+} else if (score >= 84) {
+  console.log("Grade: B");
+} else if (score <= 83 && score >= 70) {
+  console.log("Grade: C");
+} else {
+  console.log("Failed Try Again");
+}
+
+ // Exercise 4:C Loops
+
+let names = ["Estanler", "John", "Jane", "Doe"];
+
+for (let i = zero; i < names.length; i++) {
+  console.log(names[i]);
+}
