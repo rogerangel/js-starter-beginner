@@ -3,70 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
   <title>Invoice Processor</title>
-  <style>
-    body {
-      background-color: #6b6b6b;
-      color: #000000;
-      font-family: Arial, sans-serif;
-      margin: 2rem;
-      line-height: 1.6;
-    }
-
-    .flex-header {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 4rem;
-    }
-
-    #invoicenumber {
-      position: absolute;
-      top: 0;
-      right: 0;
-      font-size: 2.5rem;
-      color: #2a0f0f;
-      font-weight: bold;
-    }
-
-    .invoice-title {
-      font-size: 2.5rem;
-      color: #2a0f0f;
-      font-weight: bold;
-      margin-right: 2px;
-      text-align: center;
-    }
-
-    .invoice-details {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      max-width: 500px;
-      margin: 0 auto;
-      padding: 2rem;
-      background-color: #5497fb;
-      border-radius: 8px;
-    }
-    
-    .invoice-details section {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .invoice-details label {
-      margin-bottom: 0.5rem;
-      font-weight: bold;
-    }
-
-    .invoice-details input {
-      padding: 0.5rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 1rem;
-    }
-
-  </style>
 </head>
 <body>
 
@@ -105,12 +43,28 @@
       <input type="text" id="zipCode" placeholder="Enter Zip Code"/>
     </section>
   </div>
-
   <div>
     <p>Click the button below to process the invoice.</p>
     <button id="processButton">Process Invoice</button>
   </div>
+  <br>
+  <br>
+
+  <button id="fetchSat">
+    Get Scores
+  </button>
+  <table id="sat">
+    <thead>
+      <th>School Name</th>
+      <th># Sat Takers</th>
+      <th>Reading AVG Scores</th>
+      <!-- <th>Math AVG Scores</th>
+      <th>Writing AVG Scores</th> -->
+    </thead>
+  </table>
 
   <script src="index.js"></script>
+  <script src="documents.js"></script>
+  <script src="satScores2012.js"></script>
   </body>
   </html>

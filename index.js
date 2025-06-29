@@ -80,7 +80,8 @@ if (score >= 90) {
  // Exercise 4:C Loops
 
 let names = ["Estanler", "John", "Jane", "Doe"];
+// let names = [0, 1, 2, 3];
 
-for (let i = zero; i < names.length; i++) {
+for (let i = 3; i < names.length; i++) {
   console.log(names[i]);
 }

@@ -1,0 +1,60 @@
+body {
+    background-color: #6b6b6b;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+    line-height: 1.6;
+  }
+
+  .flex-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+  }
+
+  #invoicenumber {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2.5rem;
+    color: #2a0f0f;
+    font-weight: bold;
+  }
+
+  .invoice-title {
+    font-size: 2.5rem;
+    color: #2a0f0f;
+    font-weight: bold;
+    margin-right: 2px;
+    text-align: center;
+  }
+
+  .invoice-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #5497fb;
+    border-radius: 8px;
+  }
+  
+  .invoice-details section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .invoice-details label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  .invoice-details input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
