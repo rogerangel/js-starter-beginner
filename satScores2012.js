@@ -20,12 +20,16 @@ const getSATBtn = document.getElementById('fetchSat').addEventListener('click', 
     const data = await getNYCSATs()
     
     const tableBody = document.createElement('tbody');
-    const dataLen = await data.length
-    tableBody.rows(dataLen)
-    
-    // await data.forEach((d, i) => {
-        
-    // })
+    await data.forEach((d, i) => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${d.school_name}</td>
+            <td>${d.num_of_sat_test_takers}</td>
+            <td>${d.sat_critical_reading_avg_score}</td>
+        `;
+        tableBody.appendChild(row);
+    });
 
-    
+    const table = document.getElementById('sat');
+    table.appendChild(tableBody);
 })

@@ -1,5 +1,5 @@
 body {
-    background-color: #6b6b6b;
+    background-color: #e5e5e5;
     color: #000000;
     font-family: Arial, sans-serif;
     margin: 2rem;
@@ -57,4 +57,18 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1rem;
+  }
+
+  #sat {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+  }
+  #sat th, #sat td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  #sat thead {
+    background-color: #f2f2f2;
   }
